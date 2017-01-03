@@ -42,7 +42,7 @@ Example Use Case
     //          ["display_name"]=>
     //          NULL
     //          ["domain"]=>
-    //          string(10) "mailme.com"
+    //          string(10) "ymail.com"
     //          ["local_part"]=>
     //          string(8) "someuser"
     //        }
