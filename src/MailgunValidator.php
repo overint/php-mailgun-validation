@@ -31,7 +31,7 @@ class MailgunValidator
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => self::API_ENDPOINT . "?api_key=" . $this->apiKey .  "&address=" . $email,
+            CURLOPT_URL => self::API_ENDPOINT . "?api_key=" . $this->apiKey .  "&address=" . urlencode($email),
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_MAXREDIRS => 0,
             CURLOPT_TIMEOUT => 30,
