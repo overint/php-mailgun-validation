@@ -1,10 +1,11 @@
 # php-mailgun-validation
 Validate email address with Mailgun's validation service (Syntax checks, DNS validation, MX validation)  
 You can view Mailgun's blog post about the service here: http://blog.mailgun.com/free-email-validation-api-for-web-forms/  
-An API key is required to use this library, it can be obtained for free from mailgun's site after signup:  
+An API key is required to use this library, it can be obtained from mailgun's site after signup:  
 https://mailgun.com/app/account/security
 
-The service is free, however fair usage limits do apply (detailed in the post linked above).
+~~The service is free, however fair usage limits do apply (detailed in the post linked above)~~.
+Mailgun no longer offers this service for free, however this library works fine with the new paid service. 
 
 Installing using Composer
 ---------
