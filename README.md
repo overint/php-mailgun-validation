@@ -4,7 +4,7 @@ You can view Mailgun's blog post about the service here: http://blog.mailgun.com
 An API key is required to use this library, it can be obtained from mailgun's site after signup:  
 https://mailgun.com/app/account/security
 
-~~The service is free, however fair usage limits do apply (detailed in the post linked above)~~.
+~~The service is free, however fair usage limits do apply (detailed in the post linked above)~~.  
 Mailgun no longer offers this service for free, however this library works fine with the new paid service. 
 
 Installing using Composer
