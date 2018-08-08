@@ -43,7 +43,7 @@ class MailgunValidator
         curl_close($curl);
 
         if ($err) {
-            throw new Exception('Curl Error: ' . $err);
+            throw new \Exception('Curl Error: ' . $err);
         } else {
             return json_decode($response);
         }
