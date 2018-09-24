@@ -31,20 +31,17 @@ Example Use Case
     
     echo var_dump($validator->validateExtended('someuser@ymail.com'));
     
-    //      object(stdClass)#2 (4) {
-    //        ["address"]=>
-    //        string(19) "someuser@ymail.com"
-    //        ["did_you_mean"]=>
-    //        NULL
-    //        ["is_valid"]=>
-    //        bool(true)
-    //        ["parts"]=>
-    //        object(stdClass)#4 (3) {
-    //          ["display_name"]=>
-    //          NULL
-    //          ["domain"]=>
-    //          string(10) "ymail.com"
-    //          ["local_part"]=>
-    //          string(8) "someuser"
-    //        }
-    //      }
+     object(stdClass)#207 (8) { 
+        ["address"]=> string(18) "someuser@ymail.com" 
+        ["did_you_mean"]=> NULL 
+        ["is_disposable_address"]=> bool(false) 
+        ["is_role_address"]=> bool(false) 
+        ["is_valid"]=> bool(true) 
+        ["mailbox_verification"]=> string(4) "true" 
+        ["parts"]=> object(stdClass)#208 (3) { 
+            ["display_name"]=> NULL 
+            ["domain"]=> string(9) "ymail.com" 
+            ["local_part"]=> string(8) "someuser" 
+        } 
+        ["reason"]=> NULL 
+    }
