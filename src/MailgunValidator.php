@@ -31,7 +31,7 @@ class MailgunValidator
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => self::API_ENDPOINT . "?api_key=" . $this->apiKey .  "&address=" . urlencode($email),
+            CURLOPT_URL => self::API_ENDPOINT . "?api_key=" . $this->apiKey .  "&address=" . urlencode($email) . '&mailbox_verification=true',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_MAXREDIRS => 0,
             CURLOPT_TIMEOUT => 30,
@@ -58,7 +58,7 @@ class MailgunValidator
     public function validate($email)
     {
         $ret = $this->queryMailgun($email);
-        return $ret->is_valid;
+        return $ret->is_valid === true && $ret->mailbox_verification !== false;
     }
 
     /**
