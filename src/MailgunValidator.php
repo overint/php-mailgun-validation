@@ -58,7 +58,7 @@ class MailgunValidator
     public function validate($email)
     {
         $ret = $this->queryMailgun($email);
-        return $ret->is_valid === true && $ret->mailbox_verification !== false;
+        return property_exists($ret, 'is_valid') && $ret->is_valid === true && $ret->mailbox_verification !== false;
     }
 
     /**
